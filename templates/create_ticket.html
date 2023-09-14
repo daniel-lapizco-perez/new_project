@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>{% block title %} Agregar nuevo empleado {% endblock %}</h1>
+    <form method="post">
+        <p>
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo"
+                placeholder="Titulo">
+            </input>
+        </p>
+
+        <p>
+            <label for="departamento">Departamento</label>
+            <input type="text" name="departamento"
+                placeholder="Departamentos">
+            </input>
+        </p>
+
+        <p>
+            <label for="status">Status</label>
+            <input type="text" name="status"
+                placeholder="Status">
+            </input>
+        </p>
+        <!--
+        <p>
+            <label for="creacion">Fecha de creacion</label>
+            <input type="datetime-local" name="creacion"
+                placeholder="Fecha de creacion">
+            </input>
+        </p>
+
+        <p>
+            <label for="actualizacion">Fecha de actualizacion</label>
+            <input type="datetime-local" name="actualizacion"
+                placeholder="Fecha de actualizacion">
+            </input>
+        </p>
+
+        <p>
+            <label for="cierre">Fecha de cierre</label>
+            <input type="datetime-local" name="cierre"
+                placeholder="Fecha de cierre">
+            </input>
+        </p>
+        -->
+        <p>
+            <label for="tecnico">ID tecnico</label>
+            <input type="number" name="tecnico"
+                placeholder="ID tecnico">
+            </input>
+        </p>
+
+        <p>
+            <label for="created_by">Creado por</label>
+            <input type="number" name="created_by"
+                placeholder="Creado por">
+            </input>
+        </p>
+        
+        <p>
+        <label for="descripcion">Descripcion</label>
+        <br>
+        <textarea name="descripcion"
+                placeholder="Descripcion"
+                rows="15"
+                cols="60"
+                ></textarea>
+        </p>
+        
+        <p>
+            <label for="porcentaje">Porcentaje</label>
+            <input type="number" name="percentaje"
+                placeholder="Porcentaje">
+            </input>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}

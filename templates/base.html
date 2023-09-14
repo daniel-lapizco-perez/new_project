@@ -12,7 +12,8 @@
             text-decoration: none;
         }
 
-        .empleado{
+        .empleado
+        .ticket{
             padding: 20px;
             margin: 10px;
             background-color: #f7f4f4;
@@ -28,6 +29,8 @@
     <nav>
         <a href="{{url_for('index')}}">Lista de empleados</a>
         <a href="{{url_for('create_empleado')}}">Crear nuevo empleado</a>
+        <a href="{{url_for('tickets')}}">Lista de tickets</a>
+        <a href="{{url_for('create_ticket')}}">Crear nuevo ticket</a>
     </nav>
     <hr>
     <div class="content">

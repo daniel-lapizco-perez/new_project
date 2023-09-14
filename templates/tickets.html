@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Tickets {% endblock %}</h1>
+    {% for ticket in tickets %}
+        <div class="ticket">
+            <h3>#{{ ticket[0] }} - {{ ticket[1] }} - {{ ticket[2] }} - {{ ticket[3] }} - {{ ticket[4] }}</h3>
+        </div>
+    {% endfor %}
+{% endblock %}
